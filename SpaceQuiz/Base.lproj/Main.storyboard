@@ -33,8 +33,8 @@
                                             <constraint firstAttribute="height" constant="180" id="vTm-cx-Vb3"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXi-Q9-sfF">
-                                        <rect key="frame" x="75.666666666666657" y="270" width="58.666666666666657" height="25.333333333333314"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXi-Q9-sfF">
+                                        <rect key="frame" x="100.66666666666666" y="270" width="9" height="25.333333333333314"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
                                         <color key="textColor" name="AccentColor"/>
                                         <nil key="highlightedColor"/>
@@ -47,6 +47,9 @@
                                                 <color key="backgroundColor" systemColor="separatorColor"/>
                                             </backgroundConfiguration>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="nameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tT1-xf-e2x"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1W-Da-r0Y">
                                         <rect key="frame" x="60.999999999999993" y="386.33333333333326" width="88.333333333333314" height="31"/>
@@ -56,6 +59,9 @@
                                                 <color key="backgroundColor" systemColor="quaternaryLabelColor"/>
                                             </backgroundConfiguration>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wKc-Sn-0vi"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -67,6 +73,13 @@
                             <constraint firstItem="jpj-e0-fG5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cDQ-hE-kJw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="DXi-Q9-sfF" id="rrk-q6-j4V"/>
+                        <outlet property="imageView" destination="PKP-pk-Cxg" id="NSd-Lk-yEb"/>
+                        <outlet property="lableTop" destination="vuy-Nw-AJF" id="OfT-ys-O4e"/>
+                        <outlet property="nameButton" destination="fUI-MS-nQx" id="Btm-fD-HJi"/>
+                        <outlet property="nextButton" destination="I1W-Da-r0Y" id="tYd-E1-YQR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
