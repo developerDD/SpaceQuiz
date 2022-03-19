@@ -23,6 +23,13 @@ class ViewController: UIViewController {
         updateElement()
         // Do any additional setup after loading the view.
     }
+//    показ вхідного екрану
+    override func viewDidAppear(_ animated: Bool) {
+        let entryStoryBord = UIStoryboard(name: "Entry", bundle: Bundle.main)
+        if let entryVC = entryStoryBord.instantiateInitialViewController() as? EntryViewController {
+            present(entryVC, animated: true, completion: nil)
+        }
+    }
 // функція оновленяя
     func updateElement(){
         answerLabel.text = "?"

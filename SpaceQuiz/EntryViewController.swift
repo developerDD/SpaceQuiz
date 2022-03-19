@@ -15,9 +15,14 @@ class EntryViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func goGame(_ sender: Any) {
-    }
     
+    @IBAction func goGame(_ sender: Any) {
+//        let entryMainBord = UIStoryboard(name: "Main", bundle: Bundle.main)
+//        if let entryVC = entryMainBord.instantiateInitialViewController() as? ViewController {
+//            present(entryVC, animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
+    }
+    }
     /*
     // MARK: - Navigation
 
@@ -27,5 +32,3 @@ class EntryViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-}
