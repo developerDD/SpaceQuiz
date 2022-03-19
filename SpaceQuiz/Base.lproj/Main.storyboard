@@ -33,6 +33,19 @@
                                             <constraint firstAttribute="height" constant="180" id="vTm-cx-Vb3"/>
                                         </constraints>
                                     </imageView>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqr-pr-Zc0">
+                                        <rect key="frame" x="72.333333333333329" y="254.99999999999997" width="64.999999999999986" height="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Вихід!" cornerStyle="fixed">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="separatorColor"/>
+                                            </backgroundConfiguration>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="exitButtonTab:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iUD-ys-ikc"/>
+                                            <action selector="nameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="56s-lz-CNm"/>
+                                        </connections>
+                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXi-Q9-sfF">
                                         <rect key="frame" x="100.33333333333333" y="270" width="9" height="25.333333333333314"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="25"/>
@@ -75,6 +88,7 @@
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="DXi-Q9-sfF" id="rrk-q6-j4V"/>
+                        <outlet property="exsit" destination="uqr-pr-Zc0" id="wmI-ZP-grT"/>
                         <outlet property="imageView" destination="PKP-pk-Cxg" id="NSd-Lk-yEb"/>
                         <outlet property="lableTop" destination="vuy-Nw-AJF" id="OfT-ys-O4e"/>
                         <outlet property="nameButton" destination="fUI-MS-nQx" id="Btm-fD-HJi"/>

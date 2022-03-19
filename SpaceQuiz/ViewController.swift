@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var answerLabel: UILabel!
     
+    @IBOutlet weak var exsit: UIButton!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var nameButton: UIButton!
     //    список планет
@@ -43,6 +44,9 @@ class ViewController: UIViewController {
         answerLabel.text = elementList[cerrentElementIndex]
     }
     
+    @IBAction func exitButtonTab(_ sender: UIButton) {
+        exit(0)
+    }
     @IBAction func nextButton(_ sender: UIButton) {
         cerrentElementIndex += 1
         if cerrentElementIndex == elementList.count-1 {
@@ -54,6 +58,7 @@ class ViewController: UIViewController {
             answerLabel.isHidden = true
             nameButton.isHidden = true
             nextButton.isHidden = true
+            exsit.isHidden = false
         }
         updateElement()
     }
