@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var nameButton: UIButton!
     //    список планет
-    let elementList = ["Місяць (Луна)", "Земля","Меркурій", "Юпітер", "Венера", "Сонце", "ОК"]
+    let elementList = ["Чумацький шлях","Місяць (Луна)", "Земля","Меркурій", "Юпітер", "Чорна діра","Венера","Стівенсон 2-18","Сонце","UY щіта", "Нептун", "Плутон", "Титан", "ОК"]
     var cerrentElementIndex = 0
     
     override func viewDidLoad() {
